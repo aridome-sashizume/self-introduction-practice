@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+    <h1>自己紹介</h1>
+    <h2>プロフィール</h2>
+        <p>名前：　有富　友紀</p>
+        <p>年齢：　30</p>
+        <p>出身地：島根</p>
+        <p>趣味：　サイクリング</p>
+
+    <!--順序なしリスト-->
+    <h2>好きなもの</h2>
+    <ul>
+        <li>しらたき</li>
+        <li>メンマ</li>
+        <li>そば</li>
+    </ul>
+
+    <!--順序付きリスト-->
+    <h2>今年の目標</h2>
+    <ol>
+        <li>フロントエンジニアとしてやっていけるための力を身に着ける</li>
+        <li>Tableauを用いたデータ分析のスキルを高める</li>
+        <li>アプリを作成する上で中身をしっかり理解して作成する</li>
+    </ol>
+
+    <!--自己紹介リンクを張り付ける-->
+    <h2>リンク</h2>
+    <a href="https://x.com/sashizumeare" target="blank">私のX</a><br>
+    <a href="https://github.com/aridome-sashizume">私のGithub</a>
+
+    <!--画像の組込み-->
+    <h2>好きな風景</h2>
+    <img src="landscape.jpg" alt="好きな風景" width="400px">
+
+
+    <!--問い合わせフォーム-->
+    <h2>お問い合わせ</h2>
+    <form action="/submit" method="POST">
+        <div>
+            <label for="contact-name">お名前：</label>
+            <input type="text" id="contact-name" name="name" required>
+        </div>
+
+        <div>
+        <label for = "contact-category">お問い合わせ種別：</label>
+            <select id = "contact-category" name="InquiryType">
+                <option value="">-- 選択してください --</option>
+                <option value="GeneralInquiry" >一般的な問い合わせ</option>
+                <option value="OpinionsRequests" > ご意見・ご要望</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="contact-message">お問い合わせ内容：</label>
+            <textarea id = ="contact-message" name = "message" rows="5" required></textarea>
+        </div>
+        <button type="submit">送信する</button>
+        </form>
+
+</head>
+</html>
